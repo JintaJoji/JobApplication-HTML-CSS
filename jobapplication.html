@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        body{
+            background-color: darkslateblue;
+        }
+        .logo{
+            display: flex;
+            line-height: 6px;
+            margin-top: 30px;
+            margin-left: 450px;
+        }
+          .logo h2{
+            margin-top: 40px;
+            color: orange;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+          .logo p{
+            color: dimgray;
+            font-size: small;
+          }
+          h1{
+            color: orange;
+            margin-left: 330px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+          label{
+            /* line-height: 0px; */
+            color: orange;
+            font-size: larger;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          }
+          input{
+            width: 300px;
+            height: 30px;
+            border: 2px solid antiquewhite;
+            border-radius: 4px;
+            background-blend-mode: multiply;
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+          .form{
+            line-height: 25px;
+            margin-top: 50px;
+            margin-left: 250px;
+          }
+        .phoneemail{
+            display: flex;
+            gap: 30px;
+        }
+        .name{
+            display: flex;
+            gap: 30px;
+        }
+        .positiondate{
+            display: flex;
+            margin-top: 30px;
+            gap: 30px;
+        }
+        .positiondate select{
+            padding-right: 210px;
+            height: 35px;
+            border: 2px solid antiquewhite;
+            border-radius: 4px;
+            background-blend-mode: multiply;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: orange;
+        }
+        #date{
+            color: orange;
+        }
+        .status{
+            margin-top: 30px;
+        }
+        .employee{
+            border: 2px solid antiquewhite;
+            width: 300px;
+            border-radius: 4px;
+            background-blend-mode: multiply;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .employeestatus{
+            display: flex;
+            gap: 35px;
+           padding-bottom: 10px;
+        }
+        .resume{
+            margin-top: 20px;
+        }
+        .resume textarea{
+            width: 420px;
+            height: 100px;
+            border-radius: 4px;
+            background-blend-mode: multiply;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: orange;
+            border: 2px solid antiquewhite;
+            padding-top: 70px;
+            padding-left: 230px;
+        }
+        .resume textarea::placeholder{
+            color: orange;
+        }
+        /* .checkbox{
+            width: 300px;
+            background-color: aliceblue;
+            display: flex;
+        }*/
+
+        .captcha-box{
+             width: 300px;
+             background-color: aliceblue;
+             display: flex;
+             padding-top: 20px;
+        }
+        .captchaimg{
+            width: 40px;
+            height: 40px;
+            margin-right: 50px;
+            /* margin-top: 10px; */
+        }
+        .privacy{
+            line-height: 2px;
+            text-align: left;
+        }
+    </style>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="logo">
+
+            <i class="fa-solid fa-c"
+                style="color: orange; font-size: 100px;"></i>
+
+            <div>
+                <h2>YOUR LOGO</h2>
+                <p>COMPANY SERVICES</p>
+            </div>
+        </div>
+        <h1>Job Application Form with Rules</h1>
+        <div class="form">
+            <label>
+                Name <br>
+                <div class="name">
+                    <div><input type="text" placeholder="First"></div>
+                    <div><input type="text" placeholder="Last"></div>
+                </div>
+            </label><br>
+            <div class="phoneemail">
+                <div>
+                    <label>
+                        Email <br>
+                        <input type="email">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Phone <br>
+                        <input type="number" placeholder="### ### ####">
+                    </label>
+                </div>
+            </div>
+            <div class="positiondate">
+                <div>
+                    <label>
+                        What position are you applying for? <br></label>
+                    <select>
+                        <option value="disabled">Please select</option>
+                    </select>
+                    <!-- </label> -->
+                </div>
+                <div>
+                    <label>
+                        Available Start Date <br>
+                        <input type="date" id="date">
+                    </label>
+                </div>
+            </div>
+            <div class="status">
+                <label>
+                    What is your current employment status?
+                    <i class="fas fa-times"
+                        style="font-size: small;margin-left: 180px; margin-right: 0;"></i><input
+                        type="reset" value="clear choice"
+                        style="border: none; background-color:darkslateblue; color: orange; width: 80px;;">
+                </label>
+                <div class="employeestatus">
+                    <div class="employee">
+                        <input type="radio" name="Employee"
+                            style="width: 15px;">
+                        <label>Employed</label>
+                    </div>
+
+                    <div class="employee">
+                        <input type="radio" name="Employee"
+                            style="width: 15px;">
+                        <label>Self-Employed</label>
+                    </div>
+                </div>
+                <div class="employeestatus">
+                    <div class="employee">
+                        <input type="radio" name="Employee"
+                            style="width: 15px; ">
+                        <label>Unemployed</label>
+                    </div>
+
+                    <div class="employee">
+                        <input type="radio" name="Employee"
+                            style="width: 15px; ">
+                        <label>Student</label>
+                    </div>
+                </div>
+            </div>
+            <div class="resume">
+                <label>Upload your resume</label><br>
+                <textarea placeholder="Choose files or drag here"></textarea>
+            </div>
+            <div class="verification">
+                <label required>Verification<sup style="color: red;">*</sup></label>
+                <!-- <div class="checkbox">
+                  
+                    <input type="checkbox">
+                
+                    <p style="color: black; padding-right: 200px; font-size: small;">I'm not a robot</p>
+                    
+               
+                </div> -->
+                <div class="captcha-box">
+                    <input type="checkbox">
+                    <div>
+                    <span class="captcha-text" style="margin-right: 120px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">I'm not a robot</span>
+                    </div>
+                    <div class="privacy">
+                     <img src="captchabox.png" alt="" class="captchaimg" >
+                     <p style="font-size: small; margin-top: 0px;">reCAPTCHA</p>
+                     <p style="font-size: small; margin-top: 0px;">Privacy <sup>.</sup> Terms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
